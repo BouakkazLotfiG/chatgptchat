@@ -20,9 +20,9 @@ app.use(cors());
 
 // open ai config
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPEN_API_KEY,
 });
-const openai = new OpenAIApi(configuration);
+export const openai = new OpenAIApi(configuration);
 
 // ROUTES
 app.use('/openai', openAiRoutes);
