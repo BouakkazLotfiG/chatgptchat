@@ -5,14 +5,14 @@ import {
   MultiChatWindow,
 } from 'react-chat-engine-advanced';
 import Header from '@/components/Header';
-import StandardMessageFrom from '@/components/customMessageForms/StandardMessageFrom ';
-import Ai from '../customMessageForms/Ai';
+import StandardMessageFrom from '@/components/customMessageForms/StandardMessageFrom';
+import Ai from '@/components/customMessageForms/Ai';
 
-const Chat = () => {
+const Chat = ({ user, secret }) => {
   const chatProps = useMultiChatLogic(
     import.meta.env.VITE_PROJECT_ID,
-    'lotfi',
-    'lotfi'
+    user,
+    secret
   );
 
   return (
