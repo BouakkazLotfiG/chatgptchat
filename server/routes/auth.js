@@ -6,12 +6,12 @@ const router = express.Router();
 router.post('/login', async (req, res) => {
   try {
     const { username, password } = req.body;
-
+    console.log(username, password);
     const chatEngineResponse = await axios.get(
       'https://api.chatengine.io/users/me',
       {
         headers: {
-          'Project-ID': process.env.PROJECT_ID,
+          'Project-ID': 'c6105a57-6109-425e-8d6d-fb0924c4f209',
           'User-Name': username,
           'User-Secret': password,
         },
