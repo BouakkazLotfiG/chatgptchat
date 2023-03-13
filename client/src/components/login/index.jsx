@@ -10,6 +10,7 @@ const Login = ({ setUser, setSecret }) => {
 
   const handleLogin = () => {
     triggerLogin({ username, password });
+    console.log(resultLogin.data);
   };
 
   const handleRegister = () => {

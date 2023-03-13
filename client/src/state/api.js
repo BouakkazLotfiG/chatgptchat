@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://chatgpt-nquf.onrender.com' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3001/' }),
   reducerPath: 'main',
   tagTypes: [],
   endpoints: (build) => ({
